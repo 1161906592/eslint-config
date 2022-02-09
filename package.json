@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-vue-jsx",
+  "name": "eslint-config-vue-tsx",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
