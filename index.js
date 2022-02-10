@@ -26,6 +26,19 @@ module.exports = {
     // prettier
     "prettier/prettier": "warn",
 
+    // jsx
+    "react/jsx-curly-brace-presence": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-string-refs": "error",
+    "react/jsx-key": "error",
+    "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/no-unescaped-entities": "error",
+    "react/no-array-index-key": "error",
+    "react/self-closing-comp": "error",
+
     // import
     "import/first": "error",
     "import/no-duplicates": "error",
