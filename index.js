@@ -17,7 +17,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
   ],
-  plugins: ["import"],
+  plugins: ["import", "react"],
   rules: {
     // eslint
     eqeqeq: ["error", "always"],
