@@ -22,6 +22,7 @@ module.exports = {
     // eslint
     eqeqeq: ["error", "always"],
     "prefer-template": "error",
+    "dot-notation": "error",
 
     // prettier
     "prettier/prettier": "warn",
