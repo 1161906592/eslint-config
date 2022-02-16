@@ -36,6 +36,7 @@ module.exports = {
     "react/jsx-key": "error",
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-target-blank": "error",
+    "react/jsx-boolean-value": "error",
     "react/no-unescaped-entities": "error",
     "react/no-array-index-key": "error",
     "react/self-closing-comp": "error",
