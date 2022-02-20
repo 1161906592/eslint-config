@@ -23,6 +23,7 @@ module.exports = {
     eqeqeq: ["error", "always"],
     "prefer-template": "error",
     "dot-notation": "error",
+    "no-plusplus": "error",
 
     // prettier
     "prettier/prettier": "warn",
