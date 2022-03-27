@@ -65,4 +65,10 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: "*.vue",
+      extends: ["plugin:vue/vue3-recommended", "plugin:prettier/recommended"],
+    },
+  ],
 };
