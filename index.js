@@ -45,7 +45,7 @@ module.exports = {
     // import
     "import/first": "error",
     "import/no-duplicates": "error",
-"import/order": [
+    "import/order": [
       "error",
       {
         groups: ["builtin", "external", "internal", "parent", "index", "object", "type", "sibling"],
