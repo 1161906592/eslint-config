@@ -45,13 +45,18 @@ module.exports = {
     // import
     "import/first": "error",
     "import/no-duplicates": "error",
-    "import/order": [
+"import/order": [
       "error",
       {
-        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        groups: ["builtin", "external", "internal", "parent", "index", "object", "type", "sibling"],
         pathGroups: [
           {
             pattern: "vue",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "vue-*",
             group: "external",
             position: "before",
           },
@@ -60,8 +65,18 @@ module.exports = {
             group: "external",
             position: "before",
           },
+          {
+            pattern: "@/**",
+            group: "internal",
+            position: "before",
+          }
         ],
         pathGroupsExcludedImportTypes: ["type"],
+        "newlines-between": "always",
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false
+        },
       },
     ],
   },
