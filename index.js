@@ -32,6 +32,37 @@ module.exports = {
     'prefer-template': 'error',
     'dot-notation': 'error',
     'no-plusplus': 'error',
+    'padding-line-between-statements': [
+      'error',
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: [
+          'block',
+          'block-like',
+          'export',
+          'multiline-expression',
+          'multiline-const',
+          'multiline-let',
+          'multiline-var',
+          'return',
+        ],
+      },
+      {
+        blankLine: 'always',
+        prev: [
+          'block',
+          'block-like',
+          'export',
+          'multiline-expression',
+          'multiline-const',
+          'multiline-let',
+          'multiline-var',
+          'directive',
+        ],
+        next: '*',
+      },
+    ],
 
     // prettier
     'prettier/prettier': 'warn',
