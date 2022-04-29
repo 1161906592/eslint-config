@@ -25,7 +25,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['import', 'react'],
+  plugins: ['import', 'import-alias', 'react'],
   rules: {
     // eslint
     eqeqeq: ['error', 'always'],
