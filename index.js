@@ -32,6 +32,7 @@ module.exports = {
     'prefer-template': 'error',
     'dot-notation': 'error',
     'no-plusplus': 'error',
+    'spaced-comment': ['error', 'always'],
     'padding-line-between-statements': [
       'error',
       {
