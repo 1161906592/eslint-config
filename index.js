@@ -84,7 +84,6 @@ module.exports = {
 
     // import
     'import/first': 'error',
-    'import/no-duplicates': 'error',
     'import/newline-after-import': 'error',
     'import/order': [
       'error',
