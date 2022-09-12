@@ -14,7 +14,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [['@', process.cwd() + '/src']],
+        map: [['@', `${process.cwd()}/src`]],
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       },
     },
@@ -70,7 +70,12 @@ module.exports = {
 
     // jsx
     'react/jsx-curly-brace-presence': 'error',
-    'react/jsx-no-undef': 'error',
+    'react/jsx-no-undef': [
+      'error',
+      {
+        allowGlobals: true,
+      },
+    ],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-string-refs': 'error',
@@ -84,6 +89,7 @@ module.exports = {
 
     // import
     'import/first': 'error',
+    'import/no-duplicates': 'error',
     'import/newline-after-import': 'error',
     'import/order': [
       'error',
@@ -109,13 +115,13 @@ module.exports = {
             pattern: '@/**',
             group: 'internal',
             position: 'before',
-          }
+          },
         ],
         pathGroupsExcludedImportTypes: ['type'],
         'newlines-between': 'never',
         alphabetize: {
           order: 'asc',
-          caseInsensitive: false
+          caseInsensitive: false,
         },
       },
     ],
@@ -124,12 +130,13 @@ module.exports = {
     'import-alias/import-alias': [
       'error',
       {
-        relativeDepth: 0,
-        aliases: [
-          { alias: '@', matcher: '^src' },
-        ],
+        relativeDepth: 2,
+        aliases: [{ alias: '@', matcher: '^src' }],
       },
     ],
+
+    // @typescript-eslint
+    '@typescript-eslint/no-empty-interface': 0,
   },
   overrides: [
     {
@@ -137,4 +144,4 @@ module.exports = {
       extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
     },
   ],
-};
+}

@@ -1,24 +1,26 @@
 {
-  "name": "eslint-config-vue-tsx",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@liuyang0826/eslint-config",
+  "version": "0.0.1",
+  "description": "eslint config",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1161906592/eslint-config-vue-tsx.git"
+    "url": "git+https://github.com/1161906592/eslint-config.git"
   },
   "keywords": [
     "eslint",
     "prettier",
-    "vue",
     "tsx"
   ],
-  "author": "liuyang <1161906592@qq.com>",
+  "files": [
+    "index.js"
+  ],
+  "author": "liuyang.0826<1161906592@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1161906592/eslint-config-vue-tsx/issues"
+    "url": "https://github.com/1161906592/eslint-config/issues"
   },
-  "homepage": "https://github.com/1161906592/eslint-config-vue-jsx#readme",
+  "homepage": "https://github.com/1161906592/eslint-config#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
