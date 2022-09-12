@@ -1,3 +1,3 @@
-# eslint-config-vue-tsx
+# eslint-config
 
-vue中使用tsx的代码lint规则
+个人代码规范包
