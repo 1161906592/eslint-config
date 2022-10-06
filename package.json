@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1161906592/eslint-config.git"
+    "url": "git+https://github.com/liuyang0826/eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -18,9 +18,9 @@
   "author": "liuyang.0826<1161906592@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1161906592/eslint-config/issues"
+    "url": "https://github.com/liuyang0826/eslint-config/issues"
   },
-  "homepage": "https://github.com/1161906592/eslint-config#readme",
+  "homepage": "https://github.com/liuyang0826/eslint-config#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
