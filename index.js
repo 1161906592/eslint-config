@@ -70,12 +70,7 @@ module.exports = {
 
     // jsx
     'react/jsx-curly-brace-presence': 'error',
-    'react/jsx-no-undef': [
-      'error',
-      {
-        allowGlobals: true,
-      },
-    ],
+    'react/jsx-no-undef': ['error', { allowGlobals: true }],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-string-refs': 'error',
@@ -84,7 +79,6 @@ module.exports = {
     'react/jsx-no-target-blank': 'error',
     'react/jsx-boolean-value': 'error',
     'react/no-unescaped-entities': 'error',
-    'react/no-array-index-key': 'error',
     'react/self-closing-comp': 'error',
 
     // import
@@ -142,6 +136,16 @@ module.exports = {
     {
       files: '*.vue',
       extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
+      rules: {
+        'vue/multi-word-component-names': 0,
+        'vue/component-name-in-template-casing': [
+          'error',
+          'PascalCase',
+          {
+            registeredComponentsOnly: false,
+          },
+        ],
+      },
     },
   ],
 }
